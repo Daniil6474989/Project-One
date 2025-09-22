@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karicger - Natural Delights</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1>Karicger</h1>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="#">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contacts.html">Contact</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search products..." />
+      <button id="searchBtn"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="cart">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">0</span>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Kopan Kalecew</h2>
+      <p>Focus to support dewizard your larvast.</p>
+      <button class="btn">Shop Now</button>
+    </div>
+    <div class="shelf">
+      <img src="https://via.placeholder.com/100x100?text=Pumpkin" alt="Pumpkin" class="product-img">
+      <img src="https://via.placeholder.com/100x100?text=Apple" alt="Apple" class="product-img">
+      <img src="https://via.placeholder.com/100x100?text=Bottle" alt="Bottle" class="product-img">
+      <img src="https://via.placeholder.com/100x100?text=Books" alt="Books" class="product-img">
+    </div>
+  </section>
+
+  <!-- Hero Carousel (Slider) -->
+  <section class="carousel-section">
+    <h2>Featured Products</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn prev-btn" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/300x200?text=Product+1" alt="Product 1" />
+          <p>Seasonal Harvest</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/300x200?text=Product+2" alt="Product 2" />
+          <p>Organic Honey</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/300x200?text=Product+3" alt="Product 3" />
+          <p>Handmade Cheese</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/300x200?text=Product+4" alt="Product 4" />
+          <p>Natural Nuts</p>
+        </div>
+      </div>
+      <button class="carousel-btn next-btn" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <h2>Fruits & Details</h2>
+    <div class="products-grid" id="productsGrid">
+      <!-- Продукт 1 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x150?text=Cheese" alt="Cheese" />
+        <h3>Topore Casabe</h3>
+        <p>$190.31</p>
+      </div>
+      <!-- Продукт 2 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x150?text=Nuts" alt="Nuts" />
+        <h3>Ports</h3>
+        <p>$22.99</p>
+      </div>
+      <!-- Продукт 3 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x150?text=Candy" alt="Candy" />
+        <h3>Rezlet Coojrinness</h3>
+        <p>$103.39</p>
+      </div>
+      <!-- Продукт 4 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x150?text=Egg" alt="Egg" />
+        <h3>Leciel Postan</h3>
+        <p>$58.78</p>
+      </div>
+      <!-- Продукт 5 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x150?text=Cookie" alt="Cookie" />
+        <h3>Mult Pusches</h3>
+        <p>$55.50</p>
+      </div>
+      <!-- Продукт 6 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x150?text=Pastries" alt="Pastries" />
+        <h3>Portt Popoet</h3>
+        <p>$198.99</p>
+      </div>
+      <!-- Продукт 7 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x150?text=Stacked" alt="Stacked" />
+        <h3>Cast Conprinse</h3>
+        <p>$131.74</p>
+      </div>
+      <!-- Продукт 8 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x150?text=Ring" alt="Ring" />
+        <h3>Cber Forribes</h3>
+        <p>$139.17</p>
+      </div>
+      <!-- Продукт 9 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x150?text=Pastry" alt="Pastry" />
+        <h3>Get Kourmer</h3>
+        <p>$195.70</p>
+      </div>
+      <!-- Продукт 10 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150x150?text=Cracker" alt="Cracker" />
+        <h3>Grey Metiner</h3>
+        <p>$19.60</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="partners-section">
+    <h2>Our Partners</h2>
+    <div class="partners-carousel">
+      <button class="partner-btn prev-partner" onclick="prevPartnerSlide()"><i class="fas fa-chevron-left"></i></button>
+      <div class="partners-track" id="partnersTrack">
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+1" alt="Partner 1" />
+        </div>
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+2" alt="Partner 2" />
+        </div>
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+3" alt="Partner 3" />
+        </div>
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+4" alt="Partner 4" />
+        </div>
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+5" alt="Partner 5" />
+        </div>
+        <div class="partner-item">
+          <img src="https://via.placeholder.com/150x100?text=Partner+6" alt="Partner 6" />
+        </div>
+      </div>
+      <button class="partner-btn next-partner" onclick="nextPartnerSlide()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <h1>Karicger</h1>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="#">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contacts.html">Contact</a>
+    </nav>
+    <p>&copy; 2024 Karicger. All rights reserved.</p>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-btn" onclick="toggleCartSidebar()">×</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <!-- Сюда будут подставляться товары -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total:</span>
+        <span id="cartTotalSidebar">$0.00</span>
+      </div>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
